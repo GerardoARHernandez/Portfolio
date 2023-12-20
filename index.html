@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fuente Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Implementar los iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Portfolio Gerardo Ruelas Hernández</title>
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#inicio">Gerardo Ruelas</a>
+            </div>
+            <nav id="nav" class="responsive">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre Mí</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">Proyectos</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    
+    <div class="inicio" id="inicio">
+        <div class="contenido-inicio">
+                <div class="contenedor-img">
+                    <img src="img/hero.jpeg" alt="Mi perfil">
+                </div>
+                <h1>Gerardo Antonio Ruelas Hernández</h1>
+                <h2>Ingeniero en Comunicaciones y Electrónica - Desarrollador FrontEnd</h2>
+                <div class="redes">
+                    <a href="https://github.com/GerardoARHernandez"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gerardo-a-ruelas-hern%C3%A1ndez-628b94289/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+        </div>
+    </div>
+
+    <div class="sobremi" id="sobremi" >
+        <div class="contenido-sobremi">
+            <h2>Sobre Mí</h2>
+            <p><span>¡Hola, bienvenido! ¡Soy Gerardo, tengo 23 años y soy un desarrollador web apasionado que disfruta aprendiendo nuevas tecnologías y resolviendo problemas con código!</span></p>
+            <p> Me encanta crear sitios web hermosos y funcionales para personas que quieren marcar la diferencia. Soy una persona autodidacta, actualmente estoy aprendiendo ReactJS.</p>
+
+            <div class="fila">
+                <!-- Datos Personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            55-7385-8588
+                        </li>
+                        <li>
+                            <strong>Correo</strong>
+                            gahdz14@gmail.com
+                        </li>
+                        <li>
+                            <strong>Ubicación</strong>
+                            Ecatepec de Morelos
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="assets/Curriculum_RuelasHernández.pdf" download="Curriculum_RuelasHernandez.pdf">
+                <button type="button">
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </div>
+    
+    <div class="habilidades" id="habilidades">
+        <div class="contenido-habilidad">
+            <h2>Habilidades</h2>
+            <div class="contenido-card">
+                <div class="card">
+                    <div class="logo-servicio">
+                        <i class="fa-brands fa-html5"> </i>
+                    </div>
+                    <div class="nombre-servicio">
+                        HTML
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="logo-servicio">
+                        <i class="fa-brands fa-css3-alt"> </i>
+                    </div>
+                    <div class="nombre-servicio">
+                        CSS
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="logo-servicio">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <div class="nombre-servicio">
+                        JavaScript 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="logo-servicio">
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+                    <div class="nombre-servicio">
+                        ReactJS 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="logo-servicio">
+                        <i class="fa-solid fa-code"> </i>
+                    </div>
+                    <div class="nombre-servicio">
+                        Desarrollador Web
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="proyectos" id="proyectos">
+        <div class="contenido-proyectos">
+            <h2>Proyectos</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://freelancer-gerardohdz14.netlify.app/" target="_blank">
+                        <picture>
+                            <source loading="lazy" srcset="img/p1.webp" type="image/webp">
+                            <!-- Se carga webp, que es más ligera, si el navegador no lo soporta, carga la jpg -->
+                            <img loading="lazy" src="img/p1.png" alt="Sitio Freelancer">
+                        </picture>
+                    </a>
+                    <div class="overlay">
+                        <h3>Sitio Freelancer</h3>
+                        <p>Pagina de un Freelancer</p>
+                        <p><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i></p>
+                    </div>
+                </div> <!--Fin de Freelancer -->
+
+                <div class="proyecto">
+                    <a href="https://frontendstore-gerardohdz14.netlify.app/" target="_blank">
+                        <picture>
+                            <source loading="lazy" srcset="img/p2.webp" type="image/webp">
+                            <!-- Se carga webp, que es más ligera, si el navegador no lo soporta, carga la jpg -->
+                            <img loading="lazy" src="img/p2.png" alt="Tienda FrontEnd">
+                        </picture>
+                    </a> 
+                    <div class="overlay">
+                        <h3>Tienda FrontEnd</h3>
+                        <p>Tienda virtual de Camisetas</p>
+                        <p><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i></p>
+                    </div>
+                </div> <!-- Fin de Tienda -->
+
+                <div class="proyecto">
+                    <a href="https://blog-de-cafe-gerardohdz14.netlify.app/" target="_blank">
+                        <picture>
+                            <source loading="lazy" srcset="img/p3.webp" type="image/webp">
+                            <!-- Se carga webp, que es más ligera, si el navegador no lo soporta, carga la jpg -->
+                            <img loading="lazy" src="img/p3.png" alt="Blog de Café ">
+                        </picture>
+                    </a>                    
+                    <div class="overlay">
+                        <h3>Blog de Café</h3>
+                        <p>Blog de Cursos de Café</p>
+                        <p><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i><i class="fa-brands fa-js"></i></p>
+                    </div>
+                </div> <!--Fin de Blog de Café-->
+
+                <div class="proyecto">
+                    <a href="https://veterinariapacientes-gerardohdz14.netlify.app" target="_blank">
+                        <picture>
+                            <source loading="lazy" srcset="img/p4_citas.webp" type="image/webp">
+                            <img loading="lazy" src="img/p4_citas.png" alt="Veterinaria con React ">
+                        </picture>
+                    </a>                    
+                    <div class="overlay">
+                        <h3>Citas en Veterinaria</h3>
+                        <p>Hacer citas, editar y eliminar con<br>React & Tailwind</p>
+                        <p><i class="fa-brands fa-react"></i><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tailwind" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z" />
+                          </svg></p>
+                    </div>
+                </div> <!--Fin de Veterinario-React-->
+
+                <div class="proyecto">
+                    <a href="https://control-presupuesto-gerardohdz14.netlify.app/" target="_blank">
+                        <img loading="lazy" src="img/control_gastos-react.webp" alt="Control de Gastos con React ">
+                    </a>                    
+                    <div class="overlay">
+                        <h3>Control de Gastos</h3>
+                        <p>Proponer un presupuesto, meter, editar y eliminar los gastos</p>
+                        <p><i class="fa-brands fa-css3-alt"></i></i><i class="fa-brands fa-react"></i></p>
+                    </div>
+                </div> <!--Fin de ControlGastos-React-->
+
+            </div> <!--Fin de Galeria-->
+        </div>
+    </div> <!--Fin de proyectos-->
+
+    <div class="contacto" id="contacto">
+        <div class="contenido-contacto">
+            <h2>Contacto</h2>
+            <div class="datos">
+                <section class="contenido-datos">
+                    <strong><i class="fa-solid fa-phone"></i> Teléfono</strong>
+                    55-7385-8588
+                
+                    <strong><i class="fa-regular fa-envelope"></i> Correo</strong>
+                    gahdz14@gmail.com
+                    <strong><i class="fa-solid fa-location-dot"></i> Ubicación</strong>
+                        Ecatepec de Morelos
+                </section>
+
+                <a href="mailTo:gahdz14@gmail.com">
+                    <button type="submit" class="boton boton--primario"> Contactame <i class="fa-regular fa-paper-plane"></i> </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/GerardoARHernandez"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gerardo-a-ruelas-hern%C3%A1ndez-628b94289/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="derechos">
+            <h3>Gerardo Antonio Ruelas Hernández.  Todos los derechos Reservados 2023.</h3>
+        </div>
+    </footer> 
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
