@@ -150,6 +150,12 @@ img {
   line-height: 2.75rem;
 }
 
+.titulo {
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+  color: var(--azulclaro);
+}
+
 .redes a{
   color: var(--blanco);
   display: inline-block;
@@ -407,7 +413,6 @@ button:hover .overlay{
   width: 13rem;
   font-weight: bold;
 }
-
 
 .contacto .boton{
   display: block;

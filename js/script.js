@@ -1,3 +1,20 @@
+var textoIndex=0;
+var textos = ['Desarrollador FrontEnd', 'Programador','Ingeniero en Comunicaciones y Electrónica'];
+
+function cambiarTexto(){
+    var elemento = document.getElementById('titulo');
+    elemento.style.opacity = 0;
+
+    setTimeout(function(){
+        elemento.innerHTML = textos[textoIndex];
+        elemento.style.opacity = 1;
+        textoIndex = (textoIndex+1) % textos.length;
+    },800) 
+}
+
+setInterval(cambiarTexto,2000);
+console.log("Funcion cambiar")
+
 let menuVisible = false;
 //Función que oculta o muestra el menú
 function mostrarOcultarMenu(){
