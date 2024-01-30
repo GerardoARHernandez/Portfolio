@@ -35,7 +35,7 @@
                     <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <div id="nav2" class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -96,7 +96,7 @@
             <div class="contenido-card">
                 <div class="card">
                     <div class="logo-servicio">
-                        <i class="fa-brands fa-html5"> </i>
+                        <i class="fa-brands fa-html5 fa-lg"></i>
                     </div>
                     <div class="nombre-servicio">
                         HTML
@@ -104,7 +104,7 @@
                 </div>
                 <div class="card">
                     <div class="logo-servicio">
-                        <i class="fa-brands fa-css3-alt"> </i>
+                        <i class="fa-brands fa-css3-alt fa-lg"></i>
                     </div>
                     <div class="nombre-servicio">
                         CSS
@@ -112,10 +112,34 @@
                 </div>
                 <div class="card">
                     <div class="logo-servicio">
-                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-js fa-lg"></i>
                     </div>
                     <div class="nombre-servicio">
                         JavaScript 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="logo-servicio">
+                        <i class="fa-brands fa-sass fa-lg"></i>
+                    </div>
+                    <div class="nombre-servicio">
+                        SASS 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="logo-servicio">
+                        <i class="fa-brands fa-php fa-lg"></i>
+                    </div>
+                    <div class="nombre-servicio">
+                        PHP 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="logo-servicio">
+                        <i class="fa-solid fa-database fa-lg"></i>
+                    </div>
+                    <div class="nombre-servicio">
+                        MySQL 
                     </div>
                 </div>
                 <div class="card">
@@ -124,6 +148,17 @@
                     </div>
                     <div class="nombre-servicio">
                         ReactJS 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="logo-servicio">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tailwind" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z" />
+                          </svg>
+                    </div>
+                    <div class="nombre-servicio">
+                        Tailwind CSS
                     </div>
                 </div>
                 <div class="card">
@@ -148,13 +183,13 @@
                         <picture>
                             <source loading="lazy" srcset="img/p2.webp" type="image/webp">
                             <!-- Se carga webp, que es más ligera, si el navegador no lo soporta, carga la jpg -->
-                            <img loading="lazy" src="img/p2.png" alt="Tienda FrontEnd">
+                            <img loading="lazy" width="200" height="300" src="img/p2.png" alt="Tienda FrontEnd">
                         </picture>
                     </a> 
                     <div class="overlay">
                         <h3>Tienda FrontEnd</h3>
                         <p>Tienda virtual de Camisetas</p>
-                        <p><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i></p>
+                        <p><i class="fa-brands fa-html5 fa-lg"></i><i class="fa-brands fa-css3-alt fa-lg"></i></p>
                     </div>
                 </div> <!-- Fin de Tienda -->
 
@@ -163,27 +198,42 @@
                         <picture>
                             <source loading="lazy" srcset="img/p3.webp" type="image/webp">
                             <!-- Se carga webp, que es más ligera, si el navegador no lo soporta, carga la jpg -->
-                            <img loading="lazy" src="img/p3.png" alt="Blog de Café ">
+                            <img loading="lazy" width="200" height="300" src="img/p3.png" alt="Blog de Café ">
                         </picture>
                     </a>                    
                     <div class="overlay">
                         <h3>Blog de Café</h3>
                         <p>Blog de Cursos de Café</p>
-                        <p><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i><i class="fa-brands fa-js"></i></p>
+                        <p><i class="fa-brands fa-html5 fa-lg"></i><i class="fa-brands fa-css3-alt fa-lg"></i><i class="fa-brands fa-js fa-lg"></i></p>
                     </div>
                 </div> <!--Fin de Blog de Café-->
+
+                <div class="proyecto">
+                    <a href="https://festival-musica-geraarhdz14.netlify.app/" target="_blank">
+                        <picture>
+                            <source loading="lazy" srcset="img/festival-musica.webp" type="image/webp">
+                            <img loading="lazy" width="200" height="300" src="img/festival-musica.png" alt="Festival de Musica">
+                        </picture>
+                    </a>                    
+                    <div class="overlay">
+                        <h3>Festival de Música</h3>
+                        <p>Página que simula un festival</p>
+                        <p><i class="fa-brands fa-html5 fa-lg"></i><i class="fa-brands fa-sass fa-lg"></i><i class="fa-brands fa-js fa-lg"></i></p>
+                    </div>
+                </div> <!--Fin de Festival de Musica-->
 
                 <div class="proyecto">
                     <a href="https://veterinariapacientes-gerardohdz14.netlify.app" target="_blank">
                         <picture>
                             <source loading="lazy" srcset="img/p4_citas.webp" type="image/webp">
-                            <img loading="lazy" src="img/p4_citas.png" alt="Veterinaria con React ">
+                            <img loading="lazy" width="200" height="300" src="img/p4_citas.png" alt="Veterinaria con React ">
                         </picture>
                     </a>                    
                     <div class="overlay">
                         <h3>Citas en Veterinaria</h3>
-                        <p>Hacer citas, editar y eliminar con<br>React & Tailwind</p>
-                        <p><i class="fa-brands fa-react"></i><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tailwind" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <p>Hacer citas, editarlas<br>y eliminarlas </p>
+                        <p><i class="fa-brands fa-react fa-lg"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tailwind" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z" />
                           </svg></p>
@@ -196,8 +246,8 @@
                     </a>                    
                     <div class="overlay">
                         <h3>Control de Gastos</h3>
-                        <p>Proponer un presupuesto, meter, editar y eliminar los gastos</p>
-                        <p><i class="fa-brands fa-css3-alt"></i></i><i class="fa-brands fa-react"></i></p>
+                        <p>Proponer un presupuesto, editar y eliminar gastos</p>
+                        <p><i class="fa-brands fa-css3-alt fa-lg"></i></i><i class="fa-brands fa-react fa-lg"></i></p>
                     </div>
                 </div> <!--Fin de ControlGastos-React-->
 
@@ -207,8 +257,8 @@
                     </a>                    
                     <div class="overlay">
                         <h3>Cotizador de Criptomonedas</h3>
-                        <p>Cotizar criptomonedas con una moneda a eligir usando una API y Styled Components</p>
-                        <p><i class="fa-brands fa-css3-alt"></i></i><i class="fa-brands fa-react"></i></p>
+                        <p>Consultar una API y Styled Components</p>
+                        <p><i class="fa-brands fa-css3-alt fa-lg"></i></i><i class="fa-brands fa-react fa-lg"></i></p>
                     </div>
                 </div> <!--Fin de CotizadorCriptos-React-->
 
@@ -246,7 +296,7 @@
             <a href="https://www.linkedin.com/in/gerardo-a-ruelas-hern%C3%A1ndez-628b94289/"><i class="fa-brands fa-linkedin"></i></a>
         </div>
         <div class="derechos">
-            <h3>Gerardo Antonio Ruelas Hernández.  Todos los derechos Reservados 2023.</h3>
+            <h3>Gerardo Antonio Ruelas Hernández. Todos los derechos Reservados 2023.</h3>
         </div>
     </footer> 
 

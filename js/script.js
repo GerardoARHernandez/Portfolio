@@ -1,23 +1,33 @@
-var textoIndex=0;
-var textos = ['Desarrollador FrontEnd', 'Programador','Ingeniero en Comunicaciones y Electrónica'];
+
+document.addEventListener('DOMContentLoaded', function(){
+    iniciarApp();
+})
+
+function iniciarApp() {
+    cambiarTexto();
+    setInterval(cambiarTexto,2000);
+    mostrarOcultarMenu();
+    seleccionar();
+    scrollNav();
+}
 
 function cambiarTexto(){
-    var elemento = document.getElementById('titulo');
+
+    let textos = ['Desarrollador FrontEnd', 'Programador','Ingeniero en Comunicaciones y Electrónica'];
+
+    let elemento = document.getElementById('titulo');
     elemento.style.opacity = 0;
 
     setTimeout(function(){
-        elemento.innerHTML = textos[textoIndex];
+        elemento.innerHTML = textos[0];
         elemento.style.opacity = 1;
-        textoIndex = (textoIndex+1) % textos.length;
-    },800) 
+        textoIndex = (1) % textos.length;
+    },800)     
 }
 
-setInterval(cambiarTexto,2000);
-console.log("Funcion cambiar")
-
-let menuVisible = false;
 //Función que oculta o muestra el menú
 function mostrarOcultarMenu(){
+    let menuVisible = false;
     if(menuVisible){
         document.getElementById("nav").classList ="";
         menuVisible = false;
@@ -31,4 +41,18 @@ function seleccionar(){
     //oculto el menu una vez que selecciono una opción
     document.getElementById("nav").classList = "";
     menuVisible = false;
+}
+
+
+function scrollNav() {
+    const enlaces = document.querySelectorAll('.responsive a')
+    enlaces.forEach( enlace => {
+        enlace.addEventListener('click', function(e){
+            e.preventDefault();
+
+            const scroll = e.target.attributes.href.value;
+            const seccion = document.querySelector(scroll)
+            seccion.scrollIntoView({ behavior: "smooth"});
+        })
+    });
 }

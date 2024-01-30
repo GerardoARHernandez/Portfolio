@@ -53,7 +53,10 @@ a{
 }
 
 img {
+  max-width: 100%;
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* MENU */
@@ -465,6 +468,10 @@ button:hover .overlay{
   border-radius: 50%;
   line-height: 5rem;
   font-size: 2rem;
+}
+
+.derechos{
+  padding: 1rem;
 }
 
 /* Responsive */
