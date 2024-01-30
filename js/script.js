@@ -24,10 +24,10 @@ function cambiarTexto(){
         textoIndex = (1) % textos.length;
     },800)     
 }
-
+let menuVisible = false;
 //Función que oculta o muestra el menú
 function mostrarOcultarMenu(){
-    let menuVisible = false;
+    
     if(menuVisible){
         document.getElementById("nav").classList ="";
         menuVisible = false;
