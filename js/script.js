@@ -4,26 +4,26 @@ document.addEventListener('DOMContentLoaded', function(){
 })
 
 function iniciarApp() {
-    cambiarTexto();
-    setInterval(cambiarTexto,2000);
+    // cambiarTexto();
+    setInterval(cambiarTexto, 2000);
     mostrarOcultarMenu();
     seleccionar();
     scrollNav();
 }
-
-function cambiarTexto(){
-
-    let textos = ['Desarrollador FrontEnd', 'Programador','Ingeniero en Comunicaciones y Electrónica'];
+let textoIndex = 0; // Declarar e inicializar textoIndex fuera de la función cambiarTexto
+function cambiarTexto() {
+    let textos = ['Desarrollador FrontEnd', 'Programador', 'Ingeniero en Comunicaciones y Electrónica'];
 
     let elemento = document.getElementById('titulo');
     elemento.style.opacity = 0;
 
     setTimeout(function(){
-        elemento.innerHTML = textos[0];
+        elemento.innerHTML = textos[textoIndex]; // Usar textoIndex para seleccionar el texto
         elemento.style.opacity = 1;
-        textoIndex = (1) % textos.length;
-    },800)     
+        textoIndex = (textoIndex + 1) % textos.length; // Actualizar textoIndex para el siguiente texto
+    }, 800);     
 }
+
 let menuVisible = false;
 //Función que oculta o muestra el menú
 function mostrarOcultarMenu(){
