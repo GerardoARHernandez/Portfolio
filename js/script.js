@@ -12,7 +12,7 @@ function iniciarApp() {
 }
 let textoIndex = 0; // Declarar e inicializar textoIndex fuera de la función cambiarTexto
 function cambiarTexto() {
-    let textos = ['Desarrollador FrontEnd', 'Programador', 'Ingeniero en Comunicaciones y Electrónica'];
+    let textos = ['Desarrollador Web', 'Programador', 'Ingeniero en Comunicaciones y Electrónica'];
 
     let elemento = document.getElementById('titulo');
     elemento.style.opacity = 0;
